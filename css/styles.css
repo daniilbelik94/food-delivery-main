@@ -366,10 +366,13 @@ section {
 .section-feedback {
     background-image: url(../img/bgc-mobile-2-min.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     margin: 0 auto;
-    width: 320px;
+    max-width: 420px;
+    height: 769px;
 }
+
+
 .section-feedback__tittle {
    padding-top: 60px;
   font-size: 28px;
