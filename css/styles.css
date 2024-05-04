@@ -86,7 +86,7 @@ img {
 .burger__list-item {
     padding: 16px 16px;
     cursor: pointer;
-    transition: background-color 0.4s ease, border-radius 0.2s ease;
+    transition: background-color 0.3s ease, border-radius 0.2s ease;
 }
 
 .burger-link {
@@ -111,10 +111,12 @@ img {
 .burger__list-item:last-of-type:focus {
     border-radius: 0  0 30px 30px ;
     
+    
 }
 .burger__list-item:hover,
 .burger__list-item:focus {
     background-color:#BBF330;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
@@ -286,6 +288,12 @@ section {
     margin-right: 24px;
     margin-bottom: 72px;
 }
+.section__button:focus,
+.section__button:hover {
+  border: 2px solid #ffe450;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+}
 .read-more {
     color: #000;
   font-size: 14px;
@@ -340,6 +348,12 @@ section {
     width: 281px;
     height: 281px;
     border-radius: 50%;
+}
+.section-three__list-item:hover {
+  border: 11px solid #bbf330;
+  transition: border 200ms ease-in-out;
+  
+  
 }
 
 .section-three__list:last-of-type {
@@ -477,9 +491,15 @@ margin-bottom: 17px;
   padding-left: 16px;
   margin-bottom: 20px;
 }
+.footer__subscribe-input:focus,
+.footer__subscribe-input:hover {
+  border: 1px solid #7eb101;
+}
 .footer__subscribe-input::placeholder {
   color: #505050;
 }
+
+
 .footer__subscribe-button {
   font-family: "Roboto", sans-serif;
   font-size: 13px;
@@ -496,6 +516,12 @@ margin-bottom: 17px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__subscribe-button:hover,
+.footer__subscribe-button:focus {
+  background-color: #ffe450;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -593,7 +619,11 @@ margin-bottom: 17px;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.footer_subscribe-button:hover,
+.footer_subscribe-button:focus {
+  background-color: #ffe450;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .button__footer {
   margin-bottom: 20px;
 }
@@ -693,6 +723,7 @@ margin-bottom: 17px;
 }
 .modal-send__btn {
   border: 2px solid #7eb101;
+  background-color: #fff;
   border-radius: 30px;
   padding: 10px 20px;
   width: 106px;
@@ -706,7 +737,9 @@ margin-bottom: 17px;
 .modal-send__btn:hover,
 .modal-send__btn:focus {
   background: #bbf330;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-send__btn:required {
   border: 2px solid #FF705D;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
