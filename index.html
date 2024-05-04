@@ -54,7 +54,7 @@
                 With just a few clicks, you can have your favorite meals delivered straight to your doorstep, no matter where you are.
                 Order now and enjoy a hassle-free and delicious meal from the comfort of your own home.
             </p>
-            <button type="button" class="button__section-one">
+            <button type="button" class="button__section-one is-open">
                 Order Now
             </button>
         </div>
@@ -107,7 +107,7 @@
                 </p>
                 </li>
             </ul>
-            <button type="button" class="section__button">
+            <button type="button" class="section__button is-open">
                 Order Now
             </button>
             <a href="./index.html" class="read-more">
@@ -117,7 +117,11 @@
             </a>
             </div>
     </section>
-    <section section-three>
+
+    <!-- секция три -->
+
+
+    <section class="section-three">
         <div class="container">
             <h2 class="visually-hidden">
                 ss
@@ -181,7 +185,7 @@
                 <form class="footer__subscribe-form">
                     <label for="subscribe-email" class="footer__subscribe-label">
                         <input type="email" name="subscribe-email" id="subscribe-email" placeholder="Enter your email"
-                            class="footer__subscribe-input">
+                            class="footer__subscribe-input" required>
                     </label>
                     <div class="button-footer">
                         <button type="submit" class="footer__subscribe-button">
@@ -191,9 +195,118 @@
                 </form>
             </div>
         </div>
-        
     </section>
 
-    <script src="script.js"></script>
+<!-- footer -->
+
+<footer class="footer">
+    <div class="container footer-container">
+        
+        <nav class="footer__nav-menu">
+            <a href="./index.html" class="logo">
+                <svg class="modal-close__icon" width="52" height="52">
+                    <use href="./img/icons.svg#iconlogo" />
+                </svg>
+            </a>
+            <ul class="footer__list">
+            <li class="footer__item">
+                <a href="" class="footer__item-link">
+                    Home
+                </a>
+            </li>
+            <li class="footer__item">
+                <a href="" class="footer__item-link">
+                    About
+                </a></li>
+            <li class="footer__item">
+                <a href="" class="footer__item-link">
+                    Service
+            </a>
+            </li>
+            <li class="footer__item">
+                <a href="" class="footer__item-link">
+                    Menu
+                </a>
+            </li>
+            <li class="footer__item">
+                <a href="" class="footer__item-link">
+                    Contact
+                </a>
+            </li>
+            </ul>
+        </nav>
+
+        <div class="footer__subscribe">
+            <form class="footer__subscribe-form">
+                <label for="subscribe-email-footer" class="footer__subscribe-label">
+                    <input type="email" name="subscribe-email" id="subscribe-email-footer" placeholder="Enter your email"
+                        class="footer__subscribe-input" required>
+                </label>
+                <div class="button__footer">
+                    <button type="submit" class="footer_subscribe-button">
+                        Subscribe
+                    </button>
+                </div>
+            </form>
+            <p class="subscribing-deskr">
+                By subscribing you agree to with our <span class="policy-span">Privacy Policy</span>
+            </p>
+            <div class="list-footer">
+                <p class="footer__privacy-policy">Privacy Policy</p>
+                <p class="footer__privacy-policy">Terms of Service</p>
+                <p class="footer__privacy-policy">Cookies Settings</p>
+                
+            </div>
+            <h4 class="tittle-footer">
+                2022 FoodSta. All right reserved.
+            </h4>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+    
+<div class="backdrop">
+    <div class="modal">
+        <button class="modal-close__btn" type="button">
+            <svg class="modal-close__icon" width="11" height="11">
+                <use href="./img/icons.svg#iconclose" />
+            </svg>
+        </button>
+        <p class="modal-title"> Order Form</p>
+        <form>
+            <div class="modal-field">
+                <label class="modal-label">
+                    Name
+                </label>
+                <input type="text" class="modal-input" placeholder="Your name" required>
+            </div>
+            <div class="modal-field">
+                <label class="modal-label">
+                    Phone number
+                </label>
+                <input type="text" class="modal-input" placeholder="+38(0_ _) _ _ _   _ _   _ _" required>
+            </div>
+            <div class="modal-field">
+                <label class="modal-label">
+                    E-mail
+                </label>
+                <input type="text" class="modal-input" placeholder="example@gmail.com" required>
+            </div>
+            <div class="modal-button">
+                <button class="modal-send__btn" type="submit">
+                    Send
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+    <script src="./script.js"></script>
 </body>
 </html>

@@ -161,11 +161,7 @@ section {
 
 .section__apple {
     background-image: url(../img/bgc-mobile-min.png);
-    position: relative;
-   
     background-repeat: no-repeat;
-   ;
-    z-index: -1;
     background-size: cover;
 }
 
@@ -359,8 +355,6 @@ section {
     background-size: contain;
     margin: 0 auto;
     width: 320px;
-    max-height: 769px;
-    padding-bottom: 100px;
 }
 .section-feedback__tittle {
    padding-top: 60px;
@@ -508,4 +502,211 @@ margin-bottom: 17px;
 .button-footer {
     display: flex;
     justify-content: end;
+    padding-bottom: 60px;
+}
+
+/* footer */
+.footer {
+  background-image: url(../img/bgc-footer-mobile-min.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 320px;
+    margin: 0 auto;
+    height: 619px;
+    box-shadow: 0 -4px 24px 0 rgba(105, 105, 105, 0.1);
+    
+    
+    
+}
+.footer-container {
+  padding-top: 64px; 
+  padding: 60px 20px;
+}
+
+
+.footer__nav-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.footer__item:last-of-type {
+  margin-bottom: 40px;
+}
+.footer__item-link {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.subscribing-deskr {
+  font-size: 10px;
+  font-weight: normal;
+  color: #111 ;
+  margin-bottom: 60px;
+}
+.policy-span {
+  text-decoration: underline;
+  color: #7eb101;
+  
+}
+.list-footer {
+  display: flex;
+  flex-direction: row;
+  gap: 34px;
+}
+.footer__privacy-policy {
+  text-decoration: underline;
+  color: #7eb101;
+  font-size: 10px;
+  text-decoration-skip-ink: none;
+  margin-bottom: 40px;
+
+}
+.tittle-footer {
+  text-align: center;
+  font-size: 10px;
+
+}
+
+.footer_subscribe-button {
+  
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 500;
+  text-align: center;
+  min-width: 103px;
+  height: 42px;
+  padding: 11px 22px;
+  border-radius: 30px;
+  border: none;
+  background-color: #BBF330;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button__footer {
+  margin-bottom: 20px;
+}
+
+
+
+
+/* модальное окно */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(94, 99, 99, 0.7);
+  visibility: hidden;
+  opacity: 0;
+
+}
+.backdrop.is-open {
+  visibility: visible;
+  opacity: 1;
+  z-index: 9999;
+}
+.modal {
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translate( -50%, -50%);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
+  background: #ffe550;
+  border-radius: 30px;
+  width: 320px;
+  height: 449px;
+}
+.modal-close__btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  line-height: 0;
+  
+}
+
+.modal-title {
+  font-weight: 700 ;
+  font-size: 24px ;
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 20px;
+}
+.modal-field {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  
+}
+.modal-label {
+  text-align: left;
+  padding: 0 12px;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 2px;
+
+  
+}
+.modal-input::placeholder {
+  
+  font-weight: 400;
+  font-size: 16px;
+  color: #c4c4c4;
+}
+.modal-input {
+  padding: 14px 12px;
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #fff;
+  border: 1px solid #7eb101;
+  border-radius: 30px;
+  width: 280px;
+  height: 48px;
+  margin-bottom: 24px;
+}
+.modal-input:last-of-type {
+  margin-bottom: 32px;
+}
+.modal-button {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+.modal-send__btn {
+  border: 2px solid #7eb101;
+  border-radius: 30px;
+  padding: 10px 20px;
+  width: 106px;
+  height: 40px;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0 auto;
+  transition: background-color 0.2 ease-in;
+  
+}
+.modal-send__btn:hover,
+.modal-send__btn:focus {
+  background: #bbf330;
+}
+.modal-send__btn:required {
+  border: 2px solid #FF705D;
 }
