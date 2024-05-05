@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto:regular,500,700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Food Delivery</title>
@@ -90,8 +91,8 @@
     <!-- первая секция -->
 
     <section>
-        <div class="container">
-            <div>
+        <div class="container container-desk">
+            <div class="section-deskr">
                 <h1 class="section-one__tittle">
                     Enjoy Your Favorite Food From Anywhere
                 </h1>
@@ -103,10 +104,27 @@
                     Order Now
                 </button>
             </div>
-            <div class="slideshow-container">
-            
-
-        </div>
+        <div class="swiper mySwiper">
+            <div class="slider">
+                <div>
+                    <div class="slider-line">
+                        <img src="./img/salat-tablet-one.png" alt="salat">
+                        <img src="./img/salat-tablet-two.png" alt="salat">
+                        <img src="./img/salat-tablet-three.png" alt="salat">
+                        
+                    </div>
+                </div>
+            </div>
+            <button class="slider-prev">
+                <svg width="20" height="21">
+                    <use href="./img/icons.svg#iconarrow-left" />
+                </svg>
+            </button>
+            <button class="slider-next">
+                <svg width="20" height="21">
+                    <use href="./img/icons.svg#iconarrow-right" />
+                </svg>
+            </button>
     </section>
 
     <section class="section__apple">
@@ -366,5 +384,6 @@
     </div>
 </div>
     <script src="./script.js"></script>
+    
 </body>
 </html>
