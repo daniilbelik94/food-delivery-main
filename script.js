@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const modal = document.querySelector(".backdrop");
 
-    const openButtons = document.querySelectorAll(".button__section-one, .section__button");
+    const openButtons = document.querySelectorAll(".button__section-one, .section__button, .button__header");
     const closeButton = document.querySelector(".modal-close__btn");
 
 
