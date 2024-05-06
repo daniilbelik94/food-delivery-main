@@ -819,7 +819,7 @@ margin-bottom: 12px;
 
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("../img/bgc-tablet-min.png");
+    background-image: url(../img/bgc-tablet-min.png);
   }
   .section-feedback {
     background-repeat: no-repeat;
@@ -841,7 +841,7 @@ margin-bottom: 12px;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: 
-      url("../img/bgc-desk-min.png");
+      url(../img/bgc-desk-min.png);
   }
   .section-feedback {
     background-repeat: no-repeat;
@@ -1294,7 +1294,7 @@ section {
 
 @media (min-width: 1280px) { 
   .container {
-    width: 1280px;
+    min-width: 1280px;
     padding: 0 16px;
   }
   .header__menu {
