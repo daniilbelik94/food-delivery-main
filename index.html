@@ -90,7 +90,7 @@
 
     <!-- первая секция -->
 
-    <section>
+    <section class="section-one">
         <div class="container container-desk">
             <div class="section-deskr">
                 <h1 class="section-one__tittle">
@@ -108,9 +108,24 @@
             <div class="slider">
                 <div>
                     <div class="slider-line">
-                        <img src="./img/salat-tablet-one.png" alt="salat">
-                        <img src="./img/salat-tablet-two.png" alt="salat">
-                        <img src="./img/salat-tablet-three.png" alt="salat">
+                        <picture>
+                            <source srcset="./img/salat-1-desk.png" media="(min-width: 1280px)">
+                            <source srcset="./img/salat-1-tablet.png" media="(min-width: 768px)">
+                            <img src="./img/salat-tablet-one.png" alt="salat">
+                        </picture>
+                        <picture>
+                            <source srcset="./img/salat-2-desk.png" media="(min-width: 1280px)">
+                            <source srcset="./img/salat-2-tablet.png" media="(min-width: 768px)">
+                            <img src="./img/salat-tablet-two.png" alt="salat">
+                        </picture>
+                        <picture>
+                            <source srcset="./img/salat-3-desk.png" media="(min-width: 1280px)">
+                            <source srcset="./img/salat-3-tablet.png" media="(min-width: 768px)">
+                            <img src="./img/salat-tablet-three.png" alt="salat">
+                        </picture>
+                        
+                        
+                        
                         
                     </div>
                 </div>
@@ -133,55 +148,65 @@
             <div class="hero-image">
                 <div class="apple">
                     <div class="apple-img">
-                        <img class="shadow-img" src="./img/apple-mobile-min.png" alt="apple" width="202" height="256">  
+                        <picture>
+                            <source srcset="./img/apple-desk.png" media="(min-width: 1280px)">
+                            <source srcset="./img/apple-tablet.png" media="(min-width: 768px)">
+                            <source srcset="./img/apple.png" media="(min-width: 320px)">
+                            <img class="shadow-img" src="./img/apple.png" alt="apple" width="" height="">
+                            
+                        </picture>
+                        
                     </div>
-                   
+                    
                 </div>
+                <img class="drop-tablet" src="./img/Component-tablet.png" alt="apple" width="318" height="210">
             </div>
        
-        <h2 class="section-two__tittle">What’s Special About Our Offerings</h2>
-        <p class="section-two__desk">With our platform, you can browse through a diverse selection of cuisines and local restaurants, and choose from
-            a
-            variety of dishes that cater to your specific taste buds.</p>
-
-            <ul class="apple__list">
-                <li class="apple__list-item">
-                    <a class="svg-list">
-                        <svg width="27" height="27">
-                            <use href="./img/icons.svg#iconrocket" />
-                        </svg>
-                    </a>
-                    <h3 class="list-tittle">
-                        Fasest Delivery
-                    </h3>
-                    
-                    <p class="list-deskr">
-                        Our advanced logistics system and dedicated delivery partners ensure that your meals are delivered to you within
-                        30-minutes.
+        <div class="for-desktop">
+            <h2 class="section-two__tittle">What’s Special About Our Offerings</h2>
+            <p class="section-two__desk">With our platform, you can browse through a diverse selection of cuisines and local restaurants, and choose from
+                a
+                variety of dishes that cater to your specific taste buds.</p>
+    
+                <ul class="apple__list">
+                    <li class="apple__list-item">
+                        <a class="svg-list">
+                            <svg width="27" height="27">
+                                <use href="./img/icons.svg#iconrocket" />
+                            </svg>
+                        </a>
+                        <h3 class="list-tittle">
+                            Fasest Delivery
+                        </h3>
+                        
+                        <p class="list-deskr first">
+                            Our advanced logistics system and dedicated delivery partners ensure that your meals are delivered to you within
+                            30-minutes.
+                        </p>
+                    </li>
+                    <li class="apple__list-item">
+                        <a class="svg-list">
+                            <svg width="28" height="28">
+                                <use href="./img/icons.svg#iconfinger" />
+                            </svg>
+                        </a>
+                        <h3 class="list-tittle">
+                            Easy to order
+                        </h3>
+                        <p class="list-deskr">You can browse through a wide variety of cuisines and restaurants, select your favorite meals, and place your order in
+                        just a few clicks.
                     </p>
-                </li>
-                <li class="apple__list-item">
-                    <a class="svg-list">
-                        <svg width="28" height="28">
-                            <use href="./img/icons.svg#iconfinger" />
-                        </svg>
-                    </a>
-                    <h3 class="list-tittle">
-                        Easy to order
-                    </h3>
-                    <p class="list-deskr">You can browse through a wide variety of cuisines and restaurants, select your favorite meals, and place your order in
-                    just a few clicks.
-                </p>
-                </li>
-            </ul>
-            <button type="button" class="section__button is-open">
-                Order Now
-            </button>
-            <a href="./index.html" class="read-more">
-                Read more <svg width="14" height="9">
-                    <use href="./img/icons.svg#iconarrow-right" />
-                </svg>
-            </a>
+                    </li>
+                </ul>
+                <button type="button" class="section__button is-open">
+                    Order Now
+                </button>
+                <a href="./index.html" class="read-more">
+                    Read more <svg width="14" height="9">
+                        <use href="./img/icons.svg#iconarrow-right" />
+                    </svg>
+               </a>
+        </div>
             </div>
     </section>
 
@@ -197,15 +222,74 @@
                 Some of Our Favorites
             </h2>
             <p class="section-three-desk">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Looking for something delicious?
             </p>
-            <ul class="section-three__list">
-                <li class="section-three__list-item"><img src="./img/gamburger-min.png" alt="hamburger" width="224" height="224"></li>
-                <li class="section-three__list-item"><img src="./img/Pasta-min.png" alt="pasta" width="224" height="224"></li>
-                <li class="section-three__list-item"><img src="./img/pizza-min.png" alt="pizza" width="224" height="224"></li>
-            </ul>
+                <ul class="section-three__list">
+                    <li class="section-three__list-item">
+    
+                        <picture>
+                            <source srcset="./img/gamburger-desk-min.png" media="(min-width: 1280px)">
+                            <source srcset="./img/gamburger-tablet-min.png" media="(min-width: 768px)">
+                            <source srcset="./img/gamburger-min.png" media="(min-width: 320px)">
+                            <img src="./img/gamburger-min.png" alt="hamburger" width="" height="">
+                        
+                        </picture>
+                        
+                    </li>
+                    <li class="section-three__list-item">
+                        <picture>
+                            <source srcset="./img/Pasta-desk-min.png" media="(min-width: 1280px)">
+                            <source srcset="./img/Pasta-tablet-min.png" media="(min-width: 768px)">
+                            <source srcset="./img/Pasta-min.png" media="(min-width: 320px)">
+                            <img src="./img/Pasta-min.png" alt="pasta" width="" height="">
+                        
+                        </picture>
+                        
+                    </li>
+                    <li class="section-three__list-item">
+                        <picture>
+                            <source srcset="./img/pizza-desk-min.png" media="(min-width: 1280px)">
+                            <source srcset="./img/pizza-tablet-min.png" media="(min-width: 768px)">
+                            <source srcset="./img/pizza-min.png" media="(min-width: 320px)">
+                            <img src="./img/pizza-min.png" alt="pizza" width="" height="">
+                        
+                        </picture>
+                        
+                    </li>
+
+                    <!-- скрытые листы  -->
+
+
+                    <li class="section-three__list-item hidden-list-item">
+                        <picture>
+                            <source srcset="./img/chicken-desk-min.png" media="(min-width: 1280)">
+                            <source srcset="./img/chicken-tablet-min.png" media="(min-width: 768px)">
+                            <img src="chicken-desk-min.png" alt="pizza" width="" height="">
+                        
+                        </picture>
+                    </li>
+                    <li class="section-three__list-item hidden-list-item">
+                        <picture>
+                            <source srcset="./img/salat-desk-min.png" media="(min-width: 1280)">
+                            <source srcset="./img/salat-tablet-min.png" media="(min-width: 768px)">
+                            <img src="./img/salat-desk-min.png" alt="pizza" width="" height="">
+                        
+                        </picture>
+                    </li>
+                    <li class="section-three__list-item hidden-list-item">
+                        <picture>
+                            <source srcset="./img/borshch-desk-min.png" media="(min-width: 1280)">
+                            <source srcset="./img/borshch-tablet-min.png" media="(min-width: 768px)">
+                            <img src="./img/borshch-desk-min.png" alt="pizza" width="" height="">
+                        
+                        </picture>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
+
+                <!-- section four -->
 
 
     <section class="section-feedback">
@@ -214,7 +298,7 @@
                 What our Customers Say
             </h2>
             <p class="section-feedback__deskr">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Don't just take our word for it - see what our satisfied customers have to say
             </p>
             <ul class="feedback__list">
                 <li class="feedback__list-item">
@@ -243,17 +327,26 @@
                 </li>
             </ul>
             <div class="banana-img">
-                <img src="./img/banana-mobile-min.png" alt="banana" width="200">
+                <picture>
+                    <source srcset="./img/banan-desk-min.png" media="(min-width: 1280)">
+                    <source srcset="./img/banana-tablet-min.png" media="(min-width: 768px)">
+                    <source srcset="./img/banana-mobile-min.png" media="(min-width: 320px)">
+                    <img src="./img/banana-mobile-min.png" alt="banana" width="">
+                </picture>
             </div>
         </div>
     </section>
 
-           <section>
+
+
+                    <!-- section four/feedback -->
+
+
+           <section class="section-feedback-two">
                 <div class="container">
                     <h2 class="section-feedback__tittle">Subscribe To Get Special Offers</h2>
                     <p class="section-feedback__deskr">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
-                        in eros elementum tristique.
+                        Order now and receive 10% off your first meal with Enjoy Your Favorite Food From Anywhere.
                     </p>
                     <div class="footer__subscribe">
                         <form class="footer__subscribe-form">
@@ -313,10 +406,11 @@
         </nav>
 
         <div class="footer__subscribe">
-            <form class="footer__subscribe-form">
-                <label for="subscribe-email-footer" class="footer__subscribe-label">
+            <form class="footer__subscribe-form-2">
+                <p class="label-deskr">Subscribe</p>
+                <label for="subscribe-email-footer-2" class="footer__subscribe-label-2">
                     <input type="email" name="subscribe-email" id="subscribe-email-footer" placeholder="Enter your email"
-                        class="footer__subscribe-input" required>
+                        class="footer__subscribe-input-2" required>
                 </label>
                 <div class="button__footer">
                     <button type="submit" class="footer_subscribe-button">
@@ -327,15 +421,17 @@
             <p class="subscribing-deskr">
                 By subscribing you agree to with our <span class="policy-span">Privacy Policy</span>
             </p>
-            <div class="list-footer">
-                <p class="footer__privacy-policy">Privacy Policy</p>
-                <p class="footer__privacy-policy">Terms of Service</p>
-                <p class="footer__privacy-policy">Cookies Settings</p>
-                
+            <div class="footer-end-tags">
+                <div class="list-footer">
+                    <p class="footer__privacy-policy">Privacy Policy</p>
+                    <p class="footer__privacy-policy">Terms of Service</p>
+                    <p class="footer__privacy-policy">Cookies Settings</p>
+                    
+                </div>
+                <h4 class="tittle-footer">
+                    2022 FoodSta. All right reserved.
+                </h4>
             </div>
-            <h4 class="tittle-footer">
-                2022 FoodSta. All right reserved.
-            </h4>
         </div>
     </div>
 </footer>
@@ -373,7 +469,7 @@
                 <label class="modal-label">
                     E-mail
                 </label>
-                <input type="text" class="modal-input" placeholder="example@gmail.com" required>
+                <input type="text" class="modal-input last-input" placeholder="example@gmail.com" required>
             </div>
             <div class="modal-button">
                 <button class="modal-send__btn" type="submit">
