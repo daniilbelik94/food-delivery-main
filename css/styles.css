@@ -774,7 +774,7 @@ margin-bottom: 12px;
 /* бэкграунды под экраны */
 
 
-@media (min-resolution: 192dpi) and (min-width: 320px) {
+@media (min-width: 320px) {
   .section__apple {
      background-repeat: no-repeat;
       background-size: cover;
@@ -782,7 +782,6 @@ margin-bottom: 12px;
       
   }
   .section-feedback {
-    
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("../img/bgc-mobile-2-min.png");
@@ -795,7 +794,7 @@ margin-bottom: 12px;
     height: 619px; 
 }
 }
-@media (min-resolution: 192dpi) and (min-width: 480px) {
+@media (min-width: 480px) {
   .section__apple {
       background-repeat: no-repeat;
       background-size: cover;
@@ -808,16 +807,14 @@ margin-bottom: 12px;
   }
   .footer {
   background-image: url("../img/bgc-footer-mobile-min.png");
-
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0 -4px 24px 0 rgba(105, 105, 105, 0.1);
     height: 619px; 
 }
 }
-@media (min-resolution: 192dpi) and (min-width: 768px) {
+@media (min-width: 768px) {
   .section__apple {
-
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("../img/bgc-tablet-min.png");
@@ -837,7 +834,7 @@ margin-bottom: 12px;
     
 }
 }
-@media (min-resolution: 192dpi) and (min-width: 1280px) {
+@media (min-width: 1280px) {
   .section__apple {
     background-repeat: no-repeat;
     background-size: cover;
@@ -858,8 +855,6 @@ margin-bottom: 12px;
     height: 395px;
     box-shadow: 0 -4px 24px 0 rgba(105, 105, 105, 0.1);
     
-    
-    
 }
 }
 
@@ -878,8 +873,8 @@ margin-bottom: 12px;
 
   .container {
     max-width: 768px;
-
     padding: 0 32px;
+    margin: 0 auto;
   }
 
   .adaptive-container {
@@ -1129,7 +1124,7 @@ section {
 
 .section-feedback {
   padding: 0;
-  height: 554px;
+  
   
 }
 .section-feedback__tittle {
@@ -1394,4 +1389,5 @@ section {
   margin-right: 0;
   
 }
+
 }
