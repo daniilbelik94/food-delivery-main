@@ -13,6 +13,7 @@ svg {
 }
 
 body {
+
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
     margin: 0 auto;
@@ -777,17 +778,17 @@ margin-bottom: 12px;
   .section__apple {
      background-repeat: no-repeat;
       background-size: cover;
-      background-image: url(../img/bgc-mobile-min.png);
+      background-image: url("../img/bgc-mobile-min.png");
       
   }
   .section-feedback {
     
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../img/bgc-mobile-2-min.png);
+    background-image: url("../img/bgc-mobile-2-min.png");
   }
   .footer {
-  background-image: url(../img/bgc-footer-mobile-min.png);
+  background-image: url("../img/bgc-footer-mobile-min.png");
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0 -4px 24px 0 rgba(105, 105, 105, 0.1);
@@ -798,15 +799,15 @@ margin-bottom: 12px;
   .section__apple {
       background-repeat: no-repeat;
       background-size: cover;
-      background-image: url(../img/bgc-mobile-480-2.png);
+      background-image: url("../img/bgc-mobile-480-2.png");
   }
   .section-feedback {
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../img/bgc-mobile-480.png);
+    background-image: url("../img/bgc-mobile-480.png");
   }
   .footer {
-  background-image: url(../img/bgc-footer-mobile-min.png);
+  background-image: url("../img/bgc-footer-mobile-min.png");
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -819,15 +820,15 @@ margin-bottom: 12px;
 
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../img/bgc-tablet-min.png);
+    background-image: url("../img/bgc-tablet-min.png");
   }
   .section-feedback {
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../img/bgc-tablet-2-min.png);
+    background-image: url("../img/bgc-tablet-2-min.png");
   }
   .footer {
-  background-image: url(../img/bgc-footer-tablet-min.png);
+  background-image: url("../img/bgc-footer-tablet-min.png");
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0 -4px 24px 0 rgba(105, 105, 105, 0.1);
@@ -841,7 +842,7 @@ margin-bottom: 12px;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: 
-      url(../img/bgc-desk-min.png);
+      url("../img/bgc-desk-min.png");
   }
   .section-feedback {
     background-repeat: no-repeat;
@@ -850,7 +851,7 @@ margin-bottom: 12px;
       url("../img/bgc-desk-2-min.png");
   }
   .footer {
-  background-image: url(../img/bgc-footer-tabletpng-min.png);
+  background-image: url("../img/bgc-footer-tabletpng-min.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
