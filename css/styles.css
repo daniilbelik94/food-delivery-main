@@ -815,7 +815,7 @@ margin-bottom: 12px;
   .footer {
   background-image: url("../img/bgc-footer-mobile-min.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     box-shadow: 0 -4px 24px 0 rgba(105, 105, 105, 0.1);
     height: 619px; 
 }
