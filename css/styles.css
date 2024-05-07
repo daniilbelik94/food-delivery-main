@@ -31,7 +31,7 @@ img {
 }
 
 .container {
-	min-width: 320px;
+	width: 320px;
 	margin: 0px auto;
   padding: 0 20px;
 }
@@ -172,7 +172,9 @@ img {
 /* вторая секция */
 
 
-
+.section__apple {
+  padding-bottom: 72px;
+}
 
 .visually-hidden {
     position: absolute;
@@ -295,7 +297,7 @@ img {
     line-height: 20px;
     border-radius: 30px;
     margin-right: 24px;
-    margin-bottom: 72px;
+    
 }
 .section__button:focus,
 .section__button:hover {
@@ -345,8 +347,6 @@ img {
     flex-direction: column;
     gap: 20px;
     margin: 0 auto;
-
-
 }
 
 .section-three__list-item {
@@ -504,6 +504,7 @@ img {
   letter-spacing: 0.04em;
   padding-left: 16px;
   margin-bottom: 20px;
+  outline: none;
 }
 .footer__subscribe-input:focus,
 .footer__subscribe-input:hover {
@@ -646,6 +647,7 @@ img {
   letter-spacing: 0.04em;
   padding-left: 16px;
   margin-bottom: 20px;
+  outline: transparent;
 }
 .footer_subscribe-button {
     border-radius: 30px;
@@ -863,7 +865,7 @@ margin-bottom: 12px;
     background-size: contain;
     background-position: center;
     box-shadow: 0 -4px 24px 0 rgba(105, 105, 105, 0.1);
-    height: 396px;
+    height: 395px;
     
 }
 }
@@ -936,7 +938,11 @@ margin-bottom: 12px;
   background: #bbf330;
   
 }
-
+.button__header:hover,
+.button__header:focus {
+  background-color: #ffe450;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .container-desk {
   display: flex;
   flex-direction: row;
@@ -974,6 +980,11 @@ section {
   font-size: 13px;
   margin: 0;
 
+}
+.button__section-one:focus,
+.button__section-one:hover {
+  background-color: #ffe450;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* section one/hero with swiper */
 
@@ -1020,6 +1031,16 @@ section {
   align-items: center;
   justify-content: center;
   
+}
+.icon:focus,
+.icon:hover {
+  fill: #7EB101;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.slider-next:focus,
+.slider-next:hover {
+  fill: #7EB101;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .slider-line {
     
@@ -1123,8 +1144,8 @@ section {
     align-items: center;
     justify-content: center;
     border: 14px solid #ffe550;
-    width: 336px;
-    height: 336px;
+    width: 337px;
+    height: 337px;
     border-radius: 50%;
 }
 .section-three__list-item:hover {
@@ -1241,17 +1262,17 @@ section {
 .footer_subscribe-button {
   padding: 11px 22px;
   background-color: #fff;
-  border: 0.9px solid #7eb101;
+  border: 1px solid #7eb101;
   margin-bottom: 12px;
 }
 .footer_subscribe-button:hover,
 .footer_subscribe-button:focus {
-  border: 2px solid #ffe450;
+  border: 1px solid #ffe450;
   background-color: #fff;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__subscribe-input-2 {
-  border: 0.9px solid #ffe550;
+  border: 1px solid #ffe550;
   padding: 12px 62px 12px 12px;
   width: 279px;
   border-radius: 30px;
@@ -1418,10 +1439,18 @@ section {
 .read-more {
   display: none;
 }
-.section__button {
-  margin-bottom: 79px;
-  margin-right: 0;
-  
+.section-three__list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 16px solid #ffe550;
+    width: 396px;
+    height: 396px;
+    border-radius: 50%;
+}
+.section-three__list-item:hover {
+  border: 16px solid #bbf330;
+  transition: border 200ms ease-in-out;
 }
 
 .section-feedback__tittle {

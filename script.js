@@ -57,7 +57,6 @@ document.addEventListener('click', function(event) {
 
 
 
-
 let offset = 0;
 const sliderLine = document.querySelector('.slider-line');
 
