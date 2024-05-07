@@ -863,6 +863,7 @@ margin-bottom: 12px;
     background-size: contain;
     background-position: center;
     box-shadow: 0 -4px 24px 0 rgba(105, 105, 105, 0.1);
+    height: 396px;
     
 }
 }
@@ -1222,10 +1223,17 @@ section {
   padding-top: 100px;
   gap: 114px;
   margin-bottom: 40px;
+  align-items: center;
 
 }
 .footer__list {
   flex-direction: row;
+}
+.footer__item:hover,
+.footer__item:focus {
+  text-decoration: underline;
+  color: #bbf330;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__item:last-of-type {
     margin: 0;
